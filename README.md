@@ -1,6 +1,6 @@
 ### 安装 
 ```
-https://github.com/gaohuifeng/rq.git
+git clone https://github.com/gaohuifeng/rq.git
 cd rq
 npm install
 ```
