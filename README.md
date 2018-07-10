@@ -1,7 +1,9 @@
 ### 安装 
+```
 https://github.com/gaohuifeng/rq.git
 cd rq
 npm install
+```
 
 ### 修改配置
 ```
