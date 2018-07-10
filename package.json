@@ -1,0 +1,16 @@
+{
+  "name": "rq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rq.js",
+  "scripts": {
+    "start": "npm install && node rq.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0",
+    "request": "^2.87.0"
+  }
+}
