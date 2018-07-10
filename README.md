@@ -1,7 +1,7 @@
 ### 安装 
 npm install
 
-## 修改配置
+### 修改配置
 ```
 // 修改 config/default.json
 修改 cookie
