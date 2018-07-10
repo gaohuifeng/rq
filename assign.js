@@ -9,6 +9,7 @@ const createTask = function * (num) {
   const tasks = []
   for (let i = 1; i <= num; i = i + 1) {
     postTasksQeqData.content = '------ ' + i
+    postTasksQeqData.i = i
     const data = yield done => rq.post_task(postTasksQeqData, done)
     tasks.push(data._id)
   }

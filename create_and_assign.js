@@ -7,6 +7,7 @@ const createAndAssignTasksQeqData = config.create_and_assign_req_data
 const createAndAssignTask = function * (num) {
   for (let i = 1; i <= num; i = i + 1) {
     createAndAssignTasksQeqData.content = '@@@---------' + i
+    createAndAssignTasksQeqData.i = i
     yield done => rq.post_task(createAndAssignTasksQeqData, done)
   }
 }
