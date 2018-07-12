@@ -32,7 +32,8 @@ function rq (action) {
       json
     }
     request(obj, (err, result) => {
-      callback(err, result.body)
+      if(err || result.statusCode !== 200) console.log(err, result ? result.statusCode : null, result ? result.body : null)
+      callback(err, result ? result.body : null)
     })
   }
 }
