@@ -19,11 +19,11 @@ npm install
 修改 put_task_req_data 指派任务接口 {PUT http://project.ci/api/tasks/5b445e3a72449eddc2f0962f}请求数据
 ```
 ### 运行命令
-npm start a
+npm run a
 
 ### b. 测试批量创建任务同时指派给某人
 ```
 修改 create_and_assign_req_data 创建任务接口{POST http://project.ci/api/tasks}请求数据
 ```
 ### 运行命令
-npm start c
+npm run c
