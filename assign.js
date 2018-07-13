@@ -25,6 +25,7 @@ const assignTask = function * (tasks) {
 
 co(function * () {
   const tasks = yield createTask(count)
+  yield done => setTimeout(done, 2000)
   yield assignTask(tasks)
 }, function (err, result) {
   console.log(err, result)

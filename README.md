@@ -27,3 +27,17 @@ npm run a
 ```
 ### 运行命令
 npm run c
+
+### web端统计通知数量
+```js
+global.noticeCount =0; 
+teambition.socket.on('all', function() {
+  //console.log(arguments); 
+  if (arguments[0] === ':new:notifications' && 
+  new RegExp(/------/).test(arguments[1].content)
+  ){
+    global.noticeCount = global.noticeCount + 1; 
+    console.log("global.noticeCount: ", global.noticeCount)
+   } 
+})
+```
