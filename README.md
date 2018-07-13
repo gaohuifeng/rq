@@ -28,7 +28,10 @@ npm run a
 ### 运行命令
 npm run c
 
-### web端统计通知数量
+### 如果统计web端通知数量
+- 以下脚本贴入浏览器控制台
+- 通知的数量会打控制台打印
+- 每次重试测试需要单独执行 global.noticeCount =0; 
 ```js
 global.noticeCount =0; 
 teambition.socket.on('all', function() {
