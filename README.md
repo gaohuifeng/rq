@@ -28,7 +28,7 @@ npm run a
 ### 运行命令
 npm run c
 
-### 如果统计web端通知数量
+### 如何统计web端通知数量
 - 以下脚本贴入浏览器控制台
 - 通知的数量会在控制台打印 global.noticeCount
 - 重新测试需要单独执行语句: global.noticeCount =0; 
