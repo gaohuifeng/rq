@@ -28,6 +28,13 @@ npm run a
 ### 运行命令
 npm run c
 
+### c. 批量创建项目from模板项目 
+```
+修改 create_project_template 创建任务接口{POST http://project.ci/api/projects/from-template}请求数据
+```
+### 运行命令
+npm run p
+
 ### web端统计通知数量
 ```js
 global.noticeCount =0; 
