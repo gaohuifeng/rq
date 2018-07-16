@@ -11,6 +11,10 @@ function rq (action) {
       url = `http://project.ci:${port}/api/tasks/_id?aaaa=uuuu`
       method = 'PUT'
       break
+    case 'create_project_template':
+      url = `http://project.ci:${port}/api/projects/from-template?aaaa=uuuu`
+      method = 'POST'
+      break
     default:
       url = `http://project.ci:${port}/api/tasks?aaaa=uuuu`
       method = 'POST'
@@ -32,7 +36,7 @@ function rq (action) {
       json
     }
     request(obj, (err, result) => {
-      if(err || result.statusCode !== 200) console.log(err, result ? result.statusCode : null, result ? result.body : null)
+      if (err || result.statusCode !== 200) console.log(err, result ? result.statusCode : null, result ? result.body : null)
       callback(err, result ? result.body : null)
     })
   }
@@ -41,5 +45,6 @@ function rq (action) {
 module.exports = {
   post_task: (...args) => rq('post_task').call(this, ...args),
   put_task: (...args) => rq('put_task').call(this, ...args),
-  create_and_assign: (...args) => rq('create_and_assign').call(this, ...args)
+  create_and_assign: (...args) => rq('create_and_assign').call(this, ...args),
+  create_project_template: (...args) => rq('create_project_template').call(this, ...args)
 }

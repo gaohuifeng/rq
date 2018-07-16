@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "a": "node assign.js",
-    "c": "node create_and_assign.js"
+    "c": "node create_and_assign.js",
+    "p": "node create_project_template.js"
   },
   "author": "",
   "license": "ISC",
