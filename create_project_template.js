@@ -7,7 +7,7 @@ const createProjectTemplateData = config.create_project_template
 const createProjectFromTemplate = function * (num) {
   for (let i = 1; i <= num; i = i + 1) {
     createProjectTemplateData.name = '@@@---------' + i
-    createProjectTemplateData.i = i    
+    createProjectTemplateData.i = i
     yield done => rq.create_project_template(createProjectTemplateData, done)
   }
 }
