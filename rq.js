@@ -15,6 +15,10 @@ function rq (action) {
       url = `http://project.ci:${port}/api/projects/from-template?aaaa=uuuu`
       method = 'POST'
       break
+    case 'integration':
+      url = `${config.webHookUrl}??aaaa=uuuu`
+      method = 'POST'
+      break
     default:
       url = `http://project.ci:${port}/api/tasks?aaaa=uuuu`
       method = 'POST'
@@ -25,13 +29,16 @@ function rq (action) {
       url = url.replace(/_id/, json.task_id)
       delete json.task_id
     }
+    const headers = {
+      'content-type': 'application/json',
+      cookie,
+      'kbn-version': '5.5.1'
+    }
+    Object.assign(headers, json.headers)
+    delete json.headers
     const obj = {
       method,
-      headers: {
-        'content-type': 'application/json',
-        cookie,
-        'kbn-version': '5.5.1'
-      },
+      headers,
       url: `${url}${json.i}`,
       json
     }
@@ -46,5 +53,6 @@ module.exports = {
   post_task: (...args) => rq('post_task').call(this, ...args),
   put_task: (...args) => rq('put_task').call(this, ...args),
   create_and_assign: (...args) => rq('create_and_assign').call(this, ...args),
-  create_project_template: (...args) => rq('create_project_template').call(this, ...args)
+  create_project_template: (...args) => rq('create_project_template').call(this, ...args),
+  create_integration: (...args) => rq('integration').call(this, ...args)
 }

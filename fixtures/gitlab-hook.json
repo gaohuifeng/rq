@@ -1,0 +1,530 @@
+{
+  "mergeRequest": {
+    "open": {
+      "object_kind": "merge_request",
+      "event_type": "merge_request",
+      "user": {
+        "name": "Administrator",
+        "username": "小 C",
+        "avatar_url": "https://ih1.redbubble.net/avatar.1461510.100x100.jpg"
+      },
+      "project": {
+        "id": 1,
+        "name": "hook-test",
+        "description": "",
+        "web_url": "http://localhost:30080/root/hook-test",
+        "avatar_url": null,
+        "git_ssh_url": "git@localhost:root/hook-test.git",
+        "git_http_url": "http://localhost:30080/root/hook-test.git",
+        "namespace": "root",
+        "visibility_level": 0,
+        "path_with_namespace": "root/hook-test",
+        "default_branch": "master",
+        "ci_config_path": null,
+        "homepage": "http://localhost:30080/root/hook-test",
+        "url": "git@localhost:root/hook-test.git",
+        "ssh_url": "git@localhost:root/hook-test.git",
+        "http_url": "http://localhost:30080/root/hook-test.git"
+      },
+      "object_attributes": {
+        "assignee_id": null,
+        "author_id": 1,
+        "created_at": "2018-05-10 09:22:57 UTC",
+        "description": "",
+        "head_pipeline_id": null,
+        "id": 998,
+        "iid": 7,
+        "last_edited_at": null,
+        "last_edited_by_id": null,
+        "merge_commit_sha": null,
+        "merge_error": null,
+        "merge_params": {
+          "force_remove_source_branch": "1"
+        },
+        "merge_status": "unchecked",
+        "merge_user_id": null,
+        "merge_when_pipeline_succeeds": false,
+        "milestone_id": null,
+        "source_branch": "feature/git-hook",
+        "source_project_id": 1,
+        "state": "opened",
+        "target_branch": "master",
+        "target_project_id": 1,
+        "time_estimate": 0,
+        "title": "#TS-24 集成 git 操作",
+        "updated_at": "2018-05-10 09:22:57 UTC",
+        "updated_by_id": null,
+        "url": "http://localhost:30080/root/hook-test/merge_requests/7",
+        "source": {
+          "id": 1,
+          "name": "hook-test",
+          "description": "",
+          "web_url": "http://localhost:30080/root/hook-test",
+          "avatar_url": null,
+          "git_ssh_url": "git@localhost:root/hook-test.git",
+          "git_http_url": "http://localhost:30080/root/hook-test.git",
+          "namespace": "root",
+          "visibility_level": 0,
+          "path_with_namespace": "root/hook-test",
+          "default_branch": "master",
+          "ci_config_path": null,
+          "homepage": "http://localhost:30080/root/hook-test",
+          "url": "git@localhost:root/hook-test.git",
+          "ssh_url": "git@localhost:root/hook-test.git",
+          "http_url": "http://localhost:30080/root/hook-test.git"
+        },
+        "target": {
+          "id": 1,
+          "name": "hook-test",
+          "description": "",
+          "web_url": "http://localhost:30080/root/hook-test",
+          "avatar_url": null,
+          "git_ssh_url": "git@localhost:root/hook-test.git",
+          "git_http_url": "http://localhost:30080/root/hook-test.git",
+          "namespace": "root",
+          "visibility_level": 0,
+          "path_with_namespace": "root/hook-test",
+          "default_branch": "master",
+          "ci_config_path": null,
+          "homepage": "http://localhost:30080/root/hook-test",
+          "url": "git@localhost:root/hook-test.git",
+          "ssh_url": "git@localhost:root/hook-test.git",
+          "http_url": "http://localhost:30080/root/hook-test.git"
+        },
+        "last_commit": {
+          "id": "35e495269ab31f4b0e0c309cd1f2ed379fc76cdc",
+          "message": "Add new file",
+          "timestamp": "2018-05-10T09:12:56+00:00",
+          "url": "http://localhost:30080/root/hook-test/commit/35e495269ab31f4b0e0c309cd1f2ed379fc76cdc",
+          "author": {
+            "name": "Administrator",
+            "email": "admin@example.com"
+          }
+        },
+        "work_in_progress": true,
+        "total_time_spent": 0,
+        "human_total_time_spent": null,
+        "human_time_estimate": null,
+        "action": "open"
+      },
+      "labels": [],
+      "changes": {
+        "total_time_spent": {
+          "previous": null,
+          "current": 0
+        }
+      },
+      "repository": {
+        "name": "hook-test",
+        "url": "git@localhost:root/hook-test.git",
+        "description": "",
+        "homepage": "http://localhost:30080/root/hook-test"
+      }
+    },
+    "merge": {
+      "object_kind": "merge_request",
+      "event_type": "merge_request",
+      "user": {
+        "name": "Administrator",
+        "username": "小 C",
+        "avatar_url": "https://ih1.redbubble.net/avatar.1461510.100x100.jpg"
+      },
+      "project": {
+        "id": 1,
+        "name": "hook-test",
+        "description": "",
+        "web_url": "http://localhost:30080/root/hook-test",
+        "avatar_url": null,
+        "git_ssh_url": "git@localhost:root/hook-test.git",
+        "git_http_url": "http://localhost:30080/root/hook-test.git",
+        "namespace": "root",
+        "visibility_level": 0,
+        "path_with_namespace": "root/hook-test",
+        "default_branch": "master",
+        "ci_config_path": null,
+        "homepage": "http://localhost:30080/root/hook-test",
+        "url": "git@localhost:root/hook-test.git",
+        "ssh_url": "git@localhost:root/hook-test.git",
+        "http_url": "http://localhost:30080/root/hook-test.git"
+      },
+      "object_attributes": {
+        "assignee_id": null,
+        "author_id": 1,
+        "created_at": "2018-05-10 09:22:57 UTC",
+        "description": "",
+        "head_pipeline_id": null,
+        "id": 998,
+        "iid": 7,
+        "last_edited_at": null,
+        "last_edited_by_id": null,
+        "merge_commit_sha": null,
+        "merge_error": null,
+        "merge_params": {
+          "force_remove_source_branch": "1"
+        },
+        "merge_status": "unchecked",
+        "merge_user_id": null,
+        "merge_when_pipeline_succeeds": false,
+        "milestone_id": null,
+        "source_branch": "feature/git-hook",
+        "source_project_id": 1,
+        "state": "opened",
+        "target_branch": "master",
+        "target_project_id": 1,
+        "time_estimate": 0,
+        "title": "#TS-24 集成 git 操作",
+        "updated_at": "2018-05-10 09:22:57 UTC",
+        "updated_by_id": null,
+        "url": "http://localhost:30080/root/hook-test/merge_requests/7",
+        "source": {
+          "id": 1,
+          "name": "hook-test",
+          "description": "",
+          "web_url": "http://localhost:30080/root/hook-test",
+          "avatar_url": null,
+          "git_ssh_url": "git@localhost:root/hook-test.git",
+          "git_http_url": "http://localhost:30080/root/hook-test.git",
+          "namespace": "root",
+          "visibility_level": 0,
+          "path_with_namespace": "root/hook-test",
+          "default_branch": "master",
+          "ci_config_path": null,
+          "homepage": "http://localhost:30080/root/hook-test",
+          "url": "git@localhost:root/hook-test.git",
+          "ssh_url": "git@localhost:root/hook-test.git",
+          "http_url": "http://localhost:30080/root/hook-test.git"
+        },
+        "target": {
+          "id": 1,
+          "name": "hook-test",
+          "description": "",
+          "web_url": "http://localhost:30080/root/hook-test",
+          "avatar_url": null,
+          "git_ssh_url": "git@localhost:root/hook-test.git",
+          "git_http_url": "http://localhost:30080/root/hook-test.git",
+          "namespace": "root",
+          "visibility_level": 0,
+          "path_with_namespace": "root/hook-test",
+          "default_branch": "master",
+          "ci_config_path": null,
+          "homepage": "http://localhost:30080/root/hook-test",
+          "url": "git@localhost:root/hook-test.git",
+          "ssh_url": "git@localhost:root/hook-test.git",
+          "http_url": "http://localhost:30080/root/hook-test.git"
+        },
+        "last_commit": {
+          "id": "35e495269ab31f4b0e0c309cd1f2ed379fc76cdc",
+          "message": "Add new file",
+          "timestamp": "2018-05-10T09:12:56+00:00",
+          "url": "http://localhost:30080/root/hook-test/commit/35e495269ab31f4b0e0c309cd1f2ed379fc76cdc",
+          "author": {
+            "name": "Administrator",
+            "email": "admin@example.com"
+          }
+        },
+        "work_in_progress": true,
+        "total_time_spent": 0,
+        "human_total_time_spent": null,
+        "human_time_estimate": null,
+        "action": "merge"
+      },
+      "labels": [],
+      "changes": {
+        "total_time_spent": {
+          "previous": null,
+          "current": 0
+        }
+      },
+      "repository": {
+        "name": "hook-test",
+        "url": "git@localhost:root/hook-test.git",
+        "description": "",
+        "homepage": "http://localhost:30080/root/hook-test"
+      }
+    },
+    "reopen": {
+      "object_kind": "merge_request",
+      "event_type": "merge_request",
+      "user": {
+        "name": "test",
+        "username": "test",
+        "avatar_url": "https://www.gravatar.com/avatar/a37b08d2932ac1b952a0add8bf375ec8?s=80&d=identicon"
+      },
+      "project": {
+        "id": 1,
+        "name": "my-test",
+        "description": "my test",
+        "web_url": "http://localhost:10080/test/my-test",
+        "avatar_url": null,
+        "git_ssh_url": "ssh://git@localhost:10022/test/my-test.git",
+        "git_http_url": "http://localhost:10080/test/my-test.git",
+        "namespace": "test",
+        "visibility_level": 20,
+        "path_with_namespace": "test/my-test",
+        "default_branch": "master",
+        "ci_config_path": null,
+        "homepage": "http://localhost:10080/test/my-test",
+        "url": "ssh://git@localhost:10022/test/my-test.git",
+        "ssh_url": "ssh://git@localhost:10022/test/my-test.git",
+        "http_url": "http://localhost:10080/test/my-test.git"
+      },
+      "object_attributes": {
+        "assignee_id": 34,
+        "author_id": 34,
+        "created_at": "2018-06-28 13:00:34 +0530",
+        "description": "test",
+        "head_pipeline_id": null,
+        "id": 998,
+        "iid": 1,
+        "last_edited_at": null,
+        "last_edited_by_id": null,
+        "merge_commit_sha": null,
+        "merge_error": null,
+        "merge_params": {
+          "force_remove_source_branch": "0"
+        },
+        "merge_status": "cannot_be_merged",
+        "merge_user_id": null,
+        "merge_when_pipeline_succeeds": false,
+        "milestone_id": null,
+        "source_branch": "dev",
+        "source_project_id": 1,
+        "state": "opened",
+        "target_branch": "master",
+        "target_project_id": 1,
+        "time_estimate": 0,
+        "title": "WIP: Dev",
+        "updated_at": "2018-06-28 13:32:36 +0530",
+        "updated_by_id": null,
+        "url": "http://localhost:30080/root/hook-test/merge_requests/7",
+        "source": {
+          "id": 1,
+          "name": "my-test",
+          "description": "my test",
+          "web_url": "http://localhost:10080/test/my-test",
+          "avatar_url": null,
+          "git_ssh_url": "ssh://git@localhost:10022/test/my-test.git",
+          "git_http_url": "http://localhost:10080/test/my-test.git",
+          "namespace": "test",
+          "visibility_level": 20,
+          "path_with_namespace": "test/my-test",
+          "default_branch": "master",
+          "ci_config_path": null,
+          "homepage": "http://localhost:10080/test/my-test",
+          "url": "ssh://git@localhost:10022/test/my-test.git",
+          "ssh_url": "ssh://git@localhost:10022/test/my-test.git",
+          "http_url": "http://localhost:10080/test/my-test.git"
+        },
+        "target": {
+          "id": 1,
+          "name": "my-test",
+          "description": "my test",
+          "web_url": "http://localhost:10080/test/my-test",
+          "avatar_url": null,
+          "git_ssh_url": "ssh://git@localhost:10022/test/my-test.git",
+          "git_http_url": "http://localhost:10080/test/my-test.git",
+          "namespace": "test",
+          "visibility_level": 20,
+          "path_with_namespace": "test/my-test",
+          "default_branch": "master",
+          "ci_config_path": null,
+          "homepage": "http://localhost:10080/test/my-test",
+          "url": "ssh://git@localhost:10022/test/my-test.git",
+          "ssh_url": "ssh://git@localhost:10022/test/my-test.git",
+          "http_url": "http://localhost:10080/test/my-test.git"
+        },
+        "last_commit": {
+          "id": "6d2fb5ce17613620e1c60d82dd21e0048d0be585",
+          "message": "Add README.md",
+          "timestamp": "2018-06-28T12:57:21+05:30",
+          "url": "http://localhost:10080/test/my-test/commit/6d2fb5ce17613620e1c60d82dd21e0048d0be585",
+          "author": {
+            "name": "test",
+            "email": "773918831@qq.com"
+          }
+        },
+        "work_in_progress": true,
+        "total_time_spent": 0,
+        "human_total_time_spent": null,
+        "human_time_estimate": null,
+        "action": "reopen"
+      },
+      "labels": [],
+      "changes": {
+        "state": {
+          "previous": "closed",
+          "current": "opened"
+        },
+        "updated_at": {
+          "previous": "2018-06-28 13:31:13 +0530",
+          "current": "2018-06-28 13:32:36 +0530"
+        },
+        "assignee": {
+          "previous": null,
+          "current": {
+            "name": "test",
+            "username": "test",
+            "avatar_url": "https://www.gravatar.com/avatar/a37b08d2932ac1b952a0add8bf375ec8?s=80&d=identicon"
+          }
+        },
+        "total_time_spent": {
+          "previous": null,
+          "current": 0
+        }
+      },
+      "repository": {
+        "name": "my-test",
+        "url": "ssh://git@localhost:10022/test/my-test.git",
+        "description": "my test",
+        "homepage": "http://localhost:10080/test/my-test"
+      },
+      "assignee": {
+        "name": "test",
+        "username": "test",
+        "avatar_url": "https://www.gravatar.com/avatar/a37b08d2932ac1b952a0add8bf375ec8?s=80&d=identicon"
+      }
+    },
+    "close": {
+      "object_kind": "merge_request",
+      "event_type": "merge_request",
+      "user": {
+        "name": "test",
+        "username": "test",
+        "avatar_url": "https://www.gravatar.com/avatar/a37b08d2932ac1b952a0add8bf375ec8?s=80&d=identicon"
+      },
+      "project": {
+        "id": 1,
+        "name": "my-test",
+        "description": "my test",
+        "web_url": "http://localhost:10080/test/my-test",
+        "avatar_url": null,
+        "git_ssh_url": "ssh://git@localhost:10022/test/my-test.git",
+        "git_http_url": "http://localhost:10080/test/my-test.git",
+        "namespace": "test",
+        "visibility_level": 20,
+        "path_with_namespace": "test/my-test",
+        "default_branch": "master",
+        "ci_config_path": null,
+        "homepage": "http://localhost:10080/test/my-test",
+        "url": "ssh://git@localhost:10022/test/my-test.git",
+        "ssh_url": "ssh://git@localhost:10022/test/my-test.git",
+        "http_url": "http://localhost:10080/test/my-test.git"
+      },
+      "object_attributes": {
+        "assignee_id": 34,
+        "author_id": 34,
+        "created_at": "2018-06-28 13:00:34 +0530",
+        "description": "test",
+        "head_pipeline_id": null,
+        "id": 998,
+        "iid": 1,
+        "last_edited_at": null,
+        "last_edited_by_id": null,
+        "merge_commit_sha": null,
+        "merge_error": null,
+        "merge_params": {
+          "force_remove_source_branch": "0"
+        },
+        "merge_status": "cannot_be_merged",
+        "merge_user_id": null,
+        "merge_when_pipeline_succeeds": false,
+        "milestone_id": null,
+        "source_branch": "dev",
+        "source_project_id": 1,
+        "state": "closed",
+        "target_branch": "master",
+        "target_project_id": 1,
+        "time_estimate": 0,
+        "title": "WIP: Dev",
+        "updated_at": "2018-06-28 13:31:13 +0530",
+        "updated_by_id": null,
+        "url": "http://localhost:30080/root/hook-test/merge_requests/7",
+        "source": {
+          "id": 1,
+          "name": "my-test",
+          "description": "my test",
+          "web_url": "http://localhost:10080/test/my-test",
+          "avatar_url": null,
+          "git_ssh_url": "ssh://git@localhost:10022/test/my-test.git",
+          "git_http_url": "http://localhost:10080/test/my-test.git",
+          "namespace": "test",
+          "visibility_level": 20,
+          "path_with_namespace": "test/my-test",
+          "default_branch": "master",
+          "ci_config_path": null,
+          "homepage": "http://localhost:10080/test/my-test",
+          "url": "ssh://git@localhost:10022/test/my-test.git",
+          "ssh_url": "ssh://git@localhost:10022/test/my-test.git",
+          "http_url": "http://localhost:10080/test/my-test.git"
+        },
+        "target": {
+          "id": 1,
+          "name": "my-test",
+          "description": "my test",
+          "web_url": "http://localhost:10080/test/my-test",
+          "avatar_url": null,
+          "git_ssh_url": "ssh://git@localhost:10022/test/my-test.git",
+          "git_http_url": "http://localhost:10080/test/my-test.git",
+          "namespace": "test",
+          "visibility_level": 20,
+          "path_with_namespace": "test/my-test",
+          "default_branch": "master",
+          "ci_config_path": null,
+          "homepage": "http://localhost:10080/test/my-test",
+          "url": "ssh://git@localhost:10022/test/my-test.git",
+          "ssh_url": "ssh://git@localhost:10022/test/my-test.git",
+          "http_url": "http://localhost:10080/test/my-test.git"
+        },
+        "last_commit": {
+          "id": "6d2fb5ce17613620e1c60d82dd21e0048d0be585",
+          "message": "Add README.md",
+          "timestamp": "2018-06-28T12:57:21+05:30",
+          "url": "http://localhost:10080/test/my-test/commit/6d2fb5ce17613620e1c60d82dd21e0048d0be585",
+          "author": {
+            "name": "test",
+            "email": "773918831@qq.com"
+          }
+        },
+        "work_in_progress": true,
+        "total_time_spent": 0,
+        "human_total_time_spent": null,
+        "human_time_estimate": null,
+        "action": "close"
+      },
+      "labels": [],
+      "changes": {
+        "state": {
+          "previous": "opened",
+          "current": "closed"
+        },
+        "updated_at": {
+          "previous": "2018-06-28 13:00:34 +0530",
+          "current": "2018-06-28 13:31:13 +0530"
+        },
+        "assignee": {
+          "previous": null,
+          "current": {
+            "name": "test",
+            "username": "test",
+            "avatar_url": "https://www.gravatar.com/avatar/a37b08d2932ac1b952a0add8bf375ec8?s=80&d=identicon"
+          }
+        },
+        "total_time_spent": {
+          "previous": null,
+          "current": 0
+        }
+      },
+      "repository": {
+        "name": "my-test",
+        "url": "ssh://git@localhost:10022/test/my-test.git",
+        "description": "my test",
+        "homepage": "http://localhost:10080/test/my-test"
+      },
+      "assignee": {
+        "name": "test",
+        "username": "test",
+        "avatar_url": "https://www.gravatar.com/avatar/a37b08d2932ac1b952a0add8bf375ec8?s=80&d=identicon"
+      }
+    }
+  }
+}

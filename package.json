@@ -6,13 +6,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "a": "node assign.js",
     "c": "node create_and_assign.js",
-    "p": "node create_project_template.js"
+    "p": "node create_project_template.js",
+    "pr": "NODE_ENV=integration node pr.js",
+    "mr": "NODE_ENV=integration node mr.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "co": "^4.6.0",
     "config": "^1.30.0",
+    "lodash": "^4.17.10",
     "request": "^2.87.0"
   }
 }
