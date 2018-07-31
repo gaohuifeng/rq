@@ -13,6 +13,11 @@ npm install
 修改 webHookSecret 集成代码仓库Secret
 修改 taskNo 任务编号
 ```
+### 运行命令
+```
+npm run pr 
+npm run mr  
+```
 
 # 二、测试批量创建任务/项目
 ### 修改配置
