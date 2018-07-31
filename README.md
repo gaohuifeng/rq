@@ -7,8 +7,8 @@ npm install
 # 一、测试批量创建pr/mr
 ### 修改配置
 ```
-// 修改 config/integration.json
-修改 port 测试地址
+修改 config/integration.json
+修改 port 测试地址,80 或 指定的端口
 修改 webHookUrl 集成代码仓库URL
 修改 webHookSecret 集成代码仓库Secret
 修改 taskNo 任务编号
