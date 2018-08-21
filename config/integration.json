@@ -1,7 +1,7 @@
 {
-  "port": 30130,
-  "count": 30,
-  "webHookUrl": "http://project.ci/api/projects/5b07d319a92a6100126882bc/gitintegration/hook",
-  "webHookSecret": "34ae6a4fa4cd3c33583bda377e16912203936602",
-  "taskNo": "sssss-5123"
+  "port": 30126,
+  "count": 1,
+  "webHookUrl": "http://project.ci/api/projects/5b67e8c7356e6b068722ad8a/gitintegration/hook",
+  "webHookSecret": "61f1ea28ff466813598cc1f93ead497874cd40f6",
+  "taskNo": "TT-2"
 }
